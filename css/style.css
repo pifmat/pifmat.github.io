@@ -36,6 +36,8 @@ html {
     background-size: cover;
     background-position: center;
     flex:1;
+    display: flex;
+    flex-direction: column;
   }
 
   .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
@@ -44,11 +46,13 @@ html {
   .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
   .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
 
-  /* Flex Children */
+  /* Flex Items */
   .panel > * {
     margin: 0;
     width: 100%;
     transition: transform 0.5s;
+    border:1px solid red;
+    
   }
 
   .panel p {
